@@ -1,30 +1,36 @@
 {
-  "dependencies": {
-    "concurrently": "^7.5.0",
-    "react": "^18.2.0"
-  },
-  "name": "21_book-search-engine",
+  "name": "root",
   "version": "1.0.0",
-  "description": "BookSearchApp",
+  "description": "Assignment",
   "main": "server.js",
   "scripts": {
     "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run build\"",
     "start": "npm run build && cd server && node server.js",
-    "server": "cd server node server.js --ignore client",
+    "server": "cd server nodemon server.js --ignore client",
     "build": "cd client && npm run build",
     "install": "concurrently \"cd client && npm install\" \"cd server && npm install\" ",
-    "client": "cd client && npm start",
-    "heroku-prebuild": "npm install --dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "client": "cd client && npm start"
+  },
+  "keywords": [],
+  "author": "Min Maung",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "if-env": "^1.0.4"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4"
+  },
+  "engines": {
+    "node": "16.x"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Minmaung0307/21-book-search-engine.git"
+    "url": ""
   },
-  "author": "Min Maung",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Minmaung0307/21-book-search-engine/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/Minmaung0307/21-book-search-engine#readme"
+  "homepage": ""
 }
