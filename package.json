@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "concurrently": "^7.5.0",
+    "react": "^18.2.0"
+  },
+  "name": "21_book-search-engine",
+  "version": "1.0.0",
+  "description": "BookSearchApp",
+  "main": "server.js",
+  "scripts": {
+    "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run build\"",
+    "start": "npm run build && cd server && node server.js",
+    "server": "cd server node server.js --ignore client",
+    "build": "cd client && npm run build",
+    "install": "concurrently \"cd client && npm install\" \"cd server && npm install\" ",
+    "client": "cd client && npm start",
+    "heroku-prebuild": "npm install --dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Minmaung0307/21-book-search-engine.git"
+  },
+  "author": "Min Maung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Minmaung0307/21-book-search-engine/issues"
+  },
+  "homepage": "https://github.com/Minmaung0307/21-book-search-engine#readme"
+}
