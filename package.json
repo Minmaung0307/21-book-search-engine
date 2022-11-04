@@ -9,6 +9,7 @@
     "server": "cd server nodemon server.js --ignore client",
     "build": "cd client && npm run build",
     "client": "cd client && npm start",
+    "heroku-prebuild": "npm install --dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,5 +24,8 @@
   "homepage": "https://github.com/Minmaung0307/21-book-search-engine#readme",
   "dependencies": {
     "concurrently": "^7.5.0"
+  },
+  "engines": {
+    "node": "17.x"
   }
 }
