@@ -23,9 +23,10 @@
   },
   "homepage": "https://github.com/Minmaung0307/21-book-search-engine#readme",
   "dependencies": {
-    "concurrently": "^7.5.0"
+    "concurrently": "^7.5.0",
+    "cool-ascii-faces": "^1.3.4"
   },
   "engines": {
-    "node": "17.x"
+    "node": "18.x"
   }
 }
