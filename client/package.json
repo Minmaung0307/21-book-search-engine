@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "webpack --mode development",
-    "start": "webpack --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack --watch"
   },
   "author": "Min Maung",
   "license": "ISC",
