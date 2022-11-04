@@ -1,40 +1,11 @@
 {
   "name": "client",
   "version": "1.0.0",
-  "description": "19_module assignment",
-  "private": "true",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server",
-    "build": "webpack --mode production",
-    "start": "webpack --watch"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "Min Maung",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.19.6",
-    "@babel/plugin-transform-runtime": "^7.15.0",
-    "@babel/preset-env": "^7.19.4",
-    "@babel/runtime": "^7.15.3",
-    "babel-loader": "^8.2.5",
-    "css-loader": "^6.7.1",
-    "html-webpack-plugin": "^5.5.0",
-    "http-server": "^14.1.1",
-    "style-loader": "^3.3.1",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.0.0",
-    "webpack-pwa-manifest": "^4.3.0",
-    "workbox-cli": "^6.5.4",
-    "workbox-webpack-plugin": "^6.5.4"
-  },
-  "dependencies": {
-    "@popperjs/core": "^2.11.6",
-    "bootstrap": "^5.2.2",
-    "code-mirror-themes": "^1.0.0",
-    "eslint": "^8.26.0",
-    "idb": "^6.1.5",
-    "non-ascii": "^2.0.0",
-    "regenerator-runtime": "^0.13.9"
-  }
+  "license": "ISC"
 }

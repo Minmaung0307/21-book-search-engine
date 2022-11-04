@@ -1,36 +1,27 @@
 {
-  "name": "root",
+  "name": "21_book-search-engine",
   "version": "1.0.0",
-  "description": "Assignment",
-  "main": "server.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run build\"",
-    "start": "npm run build && cd server && node server.js",
+    "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
+    "start": "cd server && node server.js",
     "server": "cd server nodemon server.js --ignore client",
     "build": "cd client && npm run build",
-    "install": "concurrently \"cd client && npm install\" \"cd server && npm install\" ",
-    "client": "cd client && npm start"
-  },
-  "keywords": [],
-  "author": "Min Maung",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1",
-    "if-env": "^1.0.4"
-  },
-  "devDependencies": {
-    "concurrently": "^5.3.0",
-    "nodemon": "^2.0.4"
-  },
-  "engines": {
-    "node": "16.x"
+    "client": "cd client && npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/Minmaung0307/21-book-search-engine.git"
   },
+  "author": "Min Maung",
+  "license": "ISC",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/Minmaung0307/21-book-search-engine/issues"
   },
-  "homepage": ""
+  "homepage": "https://github.com/Minmaung0307/21-book-search-engine#readme",
+  "dependencies": {
+    "concurrently": "^7.5.0"
+  }
 }
