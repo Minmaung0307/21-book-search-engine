@@ -8,7 +8,7 @@ const resolvers = {
       if (context.user) {
         return User.findOne({ _id: context.user._id });
       }
-      throw new AuthenticationError("You need to be logged in!");
+      throw new AuthenticationError("You need to log in!");
     },
   },
 
@@ -26,7 +26,7 @@ const resolvers = {
         $or: [{ username: username }, { email: email }],
       });
       if (!user) {
-        throw new AuthenticationError("Can't find this user");
+        throw new AuthenticationError("This user is NOT there! Try again.");
       }
       const correctPw = await user.isCorrectPassword(password);
       if (!correctPw) {
@@ -45,7 +45,7 @@ const resolvers = {
 
         return updatedUser;
       }
-      throw new AuthenticationError("You need to be logged in!");
+      throw new AuthenticationError("You need to log in!");
     },
     removeBook: async (parent, { bookId }, context) => {
       if (context.user) {
@@ -55,7 +55,9 @@ const resolvers = {
           { new: true }
         );
         if (!updatedUser) {
-          throw new AuthenticationError("Couldn't find user with this id!");
+          throw new AuthenticationError(
+            "The user with this id is NOT there! Try again."
+          );
         }
         return updatedUser;
       }
