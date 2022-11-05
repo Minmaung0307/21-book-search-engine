@@ -1,13 +1,23 @@
 {
   "name": "client",
-  "version": "1.0.0",
-  "description": "",
-  "private": "true",
+  "version": "0.1.0",
+  "private": true,
   "proxy": "http://localhost:3001",
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "bootstrap": "^4.4.1",
+    "jwt-decode": "^2.2.0",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1"
+  },
   "scripts": {
-    "dev": "webpack-dev-server",
-    "build": "react-scripts build webpack --mode development",
-    "start": "react-scripts start webpack --watch",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -26,21 +36,8 @@
       "last 1 safari version"
     ]
   },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
   "author": "Min Maung",
-  "license": "ISC",
-  "dependencies": {
-    "@popperjs/core": "^2.11.6",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "bootstrap": "^5.2.2",
-    "idb": "^7.1.1",
-    "jwt-decode": "^2.2.0",
-    "react": "^16.14.0",
-    "react-bootstrap": "^1.0.1",
-    "react-dom": "^16.14.0",
-    "react-router-dom": "^5.3.4",
-    "react-scripts": "^3.4.1",
-    "regenerator-runtime": "^0.13.10"
-  }
+  "license": "ISC"
 }
