@@ -2,13 +2,14 @@
   "name": "21_book-search-engine",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/server.js",
   "scripts": {
     "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
-    "start": "cd server && node server.js",
+    "start": "node server/server.js",
     "server": "cd server node server.js --ignore client",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "build": "cd client && npm run build",
-    "install": "concurrently \"cd client && npm install\" \"cd server && npm install\" ",
+    "install": "cd server && npm i && cd ../client && npm i",
     "client": "cd client && npm start",
     "heroku-prebuild": "npm install --dev"
   },
@@ -24,9 +25,13 @@
   "homepage": "https://github.com/Minmaung0307/21-book-search-engine#readme",
   "dependencies": {
     "concurrently": "^7.5.0",
-    "cool-ascii-faces": "^1.3.4"
+    "cool-ascii-faces": "^1.3.4",
+    "nodemon": "^2.0.20"
   },
   "engines": {
     "node": "18.x"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0"
   }
 }
